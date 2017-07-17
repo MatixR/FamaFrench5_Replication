@@ -69,7 +69,7 @@ dataFactors <- read.csv(file=datapathF, header=TRUE, sep=",")
 
 # Relevant dates for table 1
 startDate <- as.Date("July 01 1963", format = "%B %d %Y")
-endDate   <- as.Date("December 01 2012", format = "%B %d %Y")
+endDate   <- as.Date("December 01 2013", format = "%B %d %Y")
 
 # Relevant factors
 factors  <- c("Mkt.RF", "SMB", "HML", "RMW", "CMA")
