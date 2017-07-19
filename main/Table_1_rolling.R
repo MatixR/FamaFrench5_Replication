@@ -42,7 +42,7 @@ regressFactorsRolling <- function(datapath, dataFactors, factors,
   dataFactors      <- SpliceByDate(startDate, endDate, dataFactors)
   
   # Regressions 
-  resutls         <- list()
+  results         <- list()
   portfolio_names <- colnames(dataPortfolio[2:ncol(dataPortfolio)])
   
   for (j in c(1:length(portfolio_names))) {
