@@ -5,7 +5,6 @@
 
 ## Call libraries
 library(vars)
-library(roll)
 
 
 ## Functions
@@ -107,7 +106,7 @@ index <- c(1:25)
 # Run regressions and save to pdf
 pdf(savepath)
 
-for (i in 1) { #(1:length(datapaths))) {
+for (i in (1:length(datapaths))) {
   
   # temporary vars 
   path     <- datapaths[i]
@@ -117,17 +116,13 @@ for (i in 1) { #(1:length(datapaths))) {
   
   for (sort in c(1:25)) {
     
-    title <- (names(results))[sort]
+    title <- paste(c("5 Factor Rolling Regression on", (names(results))[sort],
+                      "from the portfolio", name), 
+                   collapse =" ")
     
     plot(results[[sort]], main = title, xlab = "date" )
     
   }
-  
-  # Get results
-  results <- regressFactorsRolling(path, dataFactors, factors, startDate, 
-                                   endDate, 60)
-  r2vector<-c(results[1,])
-  plot(index, r2vector, type="n", main= title, ylab = "R^2", xlab = "index")
   
 }
 
