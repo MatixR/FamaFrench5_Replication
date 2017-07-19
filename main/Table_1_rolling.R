@@ -106,7 +106,7 @@ resultsC  <- regressFactorsRolling(datapathC, dataFactors, factors,
 
 ## Plots
 
-pdf("../results/Table_1_rolling_plots.pdf")
+pdf("../results/Table_1_rolling.pdf")
 
 # Panel A
 for (sort in c(1:25)) {
