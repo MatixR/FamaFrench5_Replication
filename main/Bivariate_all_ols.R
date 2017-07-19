@@ -79,7 +79,7 @@ datapaths <- paste0("../data/bivariate_sorts/",
                     list.files("../data/bivariate_sorts"))
 filenames <- gsub(".csv", "", list.files("../data/bivariate_sorts"), 
                   ignore.case = TRUE)
-savepath  <- "../results/bivariate_sorts.pdf"
+savepath  <- "../results/bivariate_sorts_ols.pdf"
 
 # Plot labels
 labels <- c()
